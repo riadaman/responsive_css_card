@@ -1,0 +1,35 @@
+* {
+    font-family: "Work Sans";
+  }
+:root {
+  --primary-btn-color: blue;
+  --primary-text-color: white;
+}
+.btn-primary {
+  background-color: var(--primary-btn-color);
+  color: var(--primary-text-color);
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 24px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.card {
+  height: 380px;
+  border: 2px solid blue;
+  border-radius: 20px;
+  /* display: flex; */
+  padding: 50px 50px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
